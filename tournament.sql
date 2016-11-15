@@ -28,7 +28,7 @@ GROUP BY winner;
 
 -- Creates a table of the standings
 CREATE VIEW standings AS
-SELECT players_id as player_id, players_name,
+SELECT players_id as player_id, players.player_name,
 (SELECT count(*) FROM matches WHERE matches.winner = players.id) AS matches_Won,
 (SELECT count(*) FROM matches WHERE players.id in (winner, loser)) as matches_Played
 FROM players
