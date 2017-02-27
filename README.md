@@ -1,4 +1,4 @@
-Project: Tournament Results
+#Project: Tournament Results
 
 tournament.sql creates the database, tables, and view
 tournament.py contains a number of functions to add to and access the database
